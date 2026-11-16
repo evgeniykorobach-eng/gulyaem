@@ -104,6 +104,7 @@ section { padding-block: 56px; }
 .signup .pending { font-size: 14px; opacity: .85; }
 
 footer { padding-block: 32px 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+footer a { color: var(--green); }
 
 @media (max-width: 820px) {
   .hero { grid-template-columns: 1fr; gap: 36px; padding-block: 32px 24px; }
@@ -187,32 +188,32 @@ footer { padding-block: 32px 48px; color: var(--muted); font-size: 14px; border-
     <div class="sec-head">
       <p class="eyebrow">Заявка</p>
       <h2 id="su-h">Станьте первыми</h2>
-      <p>Напишите нам в Telegram @Korobach_E, и мы пригласим вас, когда приложение выйдет в App Store, Google Play и RuStore.</p>
+      <p>Оставьте заявку в нашем Telegram-боте — это займёт минуту. Пригласим вас, когда приложение выйдет в App Store, Google Play и RuStore.</p>
     </div>
     <div class="signup">
       <div class="s-owner">
         <h3>Я владелец собаки</h3>
         <p>Получите приложение первым и помогите выбрать, что добавить дальше.</p>
-        <a class="btn" id="owner-btn" href="#signup" target="_blank" rel="noopener">Написать в Telegram</a>
-        <p class="pending">Напишите «Хочу в приложение», кличку и породу собаки.</p>
+        <a class="btn" id="owner-btn" href="#signup" target="_blank" rel="noopener">Оставить заявку в Telegram</a>
+        <p class="pending">Бот спросит район, кличку и породу собаки.</p>
         <p class="pending" id="owner-pending" hidden>Форма заявки появится здесь в ближайшие дни.</p>
       </div>
       <div class="s-biz">
         <h3>Я бизнес</h3>
         <p>Ветклиника, грумер, кинолог или зоомагазин в Самаре? Расскажем об условиях для первых партнёров.</p>
-        <a class="btn" id="biz-btn" href="#signup" target="_blank" rel="noopener">Написать в Telegram</a>
-        <p class="pending">Напишите название, вид услуг и адрес в Самаре.</p>
+        <a class="btn" id="biz-btn" href="#signup" target="_blank" rel="noopener">Оставить заявку в Telegram</a>
+        <p class="pending">Бот спросит название, вид услуг и адрес в Самаре.</p>
         <p class="pending" id="biz-pending" hidden>Форма заявки появится здесь в ближайшие дни.</p>
       </div>
     </div>
   </section>
 
-  <footer>«Гуляем вместе» · приложение для владельцев собак · Самара, 2026. В демо показаны примеры собак и мест.</footer>
+  <footer>«Гуляем вместе» · приложение для владельцев собак · Самара, 2026. В демо показаны примеры собак и мест.<br>Вопросы — <a href="https://t.me/Korobach_E">@Korobach_E</a> · <a href="privacy.html">Политика конфиденциальности</a></footer>
 </div>
 
 <script>
-  // Ссылки на формы заявок (например, Яндекс Формы). Пока пусто — кнопки скрыты.
-  const FORMS = { owner: "https://t.me/Korobach_E", biz: "https://t.me/Korobach_E" };
+  // Ссылки на бота заявок. Пусто — кнопка скрыта.
+  const FORMS = { owner: "https://t.me/gulyaem_samara_bot?start=owner", biz: "https://t.me/gulyaem_samara_bot?start=biz" };
   for (const k of ["owner", "biz"]) {
     const btn = document.getElementById(k + "-btn");
     if (FORMS[k]) { btn.href = FORMS[k]; }
