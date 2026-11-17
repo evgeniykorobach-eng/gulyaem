@@ -61,6 +61,9 @@ p { margin: 0; }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 24px; border-radius: 999px; font: 700 16px var(--display); text-decoration: none; border: 0; cursor: pointer; }
 .btn-primary { background: var(--green); color: var(--on-green); }
 .btn-soft { background: var(--green-soft); color: var(--green); }
+.get-app { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+.btn-store { min-height: 44px; padding: 0 18px; font-size: 15px; background: transparent; color: var(--green); box-shadow: inset 0 0 0 2px var(--green); }
+.get-app-note { margin-top: 8px; font-size: 13px; color: var(--muted); max-width: 46ch; }
 .btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
 .stats { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 28px; }
 .stat b { display: block; font: 800 26px var(--display); font-variant-numeric: tabular-nums; }
@@ -126,6 +129,11 @@ footer a { color: var(--green); }
         <a class="btn btn-primary" href="#signup">Хочу пользоваться</a>
         <a class="btn btn-soft" href="#business">Я ветклиника или грумер</a>
       </div>
+      <div class="get-app" aria-label="Скачать приложение">
+        <a class="btn btn-store" href="https://github.com/evgeniykorobach-eng/gulyaem/releases/latest/download/gulyaem-vmeste.apk">Скачать для Android</a>
+        <a class="btn btn-store" href="https://t.me/gulyaem_samara_bot?start=owner" target="_blank" rel="noopener">iPhone: скоро, записаться</a>
+      </div>
+      <p class="get-app-note">Демо-версия для Android: после скачивания разрешите установку из неизвестных источников. Для iPhone оставьте заявку, и мы пришлём ссылку, когда приложение появится в TestFlight.</p>
       <div class="stats" aria-label="Что уже есть в приложении">
         <div class="stat"><b>2 км</b><span>радиус оповещения о потерянной собаке</span></div>
         <div class="stat"><b>100</b><span>соседей, и ваш район открыт</span></div>
