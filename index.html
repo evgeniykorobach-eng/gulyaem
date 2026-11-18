@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Гуляем вместе — приложение для владельцев собак Самары: кто гуляет рядом, чат с хозяевами, запись к грумеру и ветеринару.">
-<meta property="og:title" content="Гуляем вместе">
-<meta property="og:description" content="Приложение для владельцев собак Самары. Смотрите демо и оставляйте заявку.">
+<meta name="description" content="«Гуляем вместе» уже работает в Самаре: кто гуляет рядом прямо сейчас, чаты с хозяевами собак, площадки, ветклиники и опасные места на карте. Скачайте для Android или откройте на iPhone.">
+<meta property="og:title" content="Гуляем вместе — собачники Самары">
+<meta property="og:description" content="Уже работает! Кто гуляет рядом, чаты с хозяевами и опасные места на карте. Скачайте для Android или откройте на iPhone.">
 <meta property="og:image" content="poster.jpg">
 <link rel="icon" href="favicon.png">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -122,14 +122,14 @@ footer a { color: var(--green); }
   <header class="hero">
     <div>
       <div class="brand"><span class="brand-mark" aria-hidden="true">🐾</span>Гуляем вместе</div>
-      <p class="eyebrow">Скоро в Самаре</p>
+      <p class="eyebrow">Уже работает в Самаре</p>
       <h1>Соседи с собаками <em>в одном приложении</em></h1>
       <p class="lead">Кто гуляет рядом прямо сейчас, чат с хозяевами, запись к грумеру и ветеринару и опасные места на карте города.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#signup">Хочу пользоваться</a>
+        <a class="btn btn-primary" href="#download">Установить приложение</a>
         <a class="btn btn-soft" href="#business">Я ветклиника или грумер</a>
       </div>
-      <div class="get-app" aria-label="Скачать приложение">
+      <div class="get-app" id="download" aria-label="Скачать приложение">
         <a class="btn btn-store" href="https://github.com/evgeniykorobach-eng/gulyaem/releases/latest/download/gulyaem-vmeste.apk">Скачать для Android</a>
         <a class="btn btn-store" href="https://app.170-168-76-95.sslip.io/">Открыть на iPhone</a>
       </div>
@@ -143,7 +143,7 @@ footer a { color: var(--green); }
     </div>
     <figure class="phone">
       <video id="demo" src="demo.mp4" poster="poster.jpg" controls playsinline muted preload="metadata"></video>
-      <figcaption>Демо приложения, 65 секунд</figcaption>
+      <figcaption>Как это работает, 65 секунд</figcaption>
     </figure>
   </header>
 
@@ -183,9 +183,9 @@ footer a { color: var(--green); }
 
   <section aria-labelledby="map-h">
     <div class="sec-head">
-      <p class="eyebrow">Карта демо</p>
+      <p class="eyebrow">Карта</p>
       <h2 id="map-h">Начинаем с Самары</h2>
-      <p>В демо уже отмечены места, где гуляют собаки. После запуска их будут добавлять сами жители и партнёры.</p>
+      <p>На карте уже отмечены площадки и места для выгула. Новые места добавляют сами жители и партнёры.</p>
     </div>
     <div class="places">
       <span>🌳 Парк Гагарина</span><span>🌳 Струковский сад</span><span>🌳 Парк Дружбы</span>
@@ -195,14 +195,14 @@ footer a { color: var(--green); }
 
   <section id="signup" aria-labelledby="su-h">
     <div class="sec-head">
-      <p class="eyebrow">Заявка</p>
-      <h2 id="su-h">Станьте первыми</h2>
-      <p>Оставьте заявку в нашем Telegram-боте — это займёт минуту. Пригласим вас, когда приложение выйдет в App Store, Google Play и RuStore.</p>
+      <p class="eyebrow">Telegram-бот</p>
+      <h2 id="su-h">Будьте в курсе</h2>
+      <p>Оставьте заявку в нашем Telegram-боте — это займёт минуту. Пришлём новости приложения и сообщим, когда оно появится в RuStore, Google Play и App Store.</p>
     </div>
     <div class="signup">
       <div class="s-owner">
         <h3>Я владелец собаки</h3>
-        <p>Получите приложение первым и помогите выбрать, что добавить дальше.</p>
+        <p>Получайте новости первым и помогите выбрать, что добавить в приложение дальше.</p>
         <a class="btn" id="owner-btn" href="#signup" target="_blank" rel="noopener">Оставить заявку в Telegram</a>
         <p class="pending">Бот спросит район, кличку и породу собаки.</p>
         <p class="pending" id="owner-pending" hidden>Форма заявки появится здесь в ближайшие дни.</p>
@@ -217,7 +217,7 @@ footer a { color: var(--green); }
     </div>
   </section>
 
-  <footer>«Гуляем вместе» · приложение для владельцев собак · Самара, 2026. В демо показаны примеры собак и мест.<br>Вопросы — <a href="https://t.me/Korobach_E">@Korobach_E</a> · <a href="privacy.html">Политика конфиденциальности</a></footer>
+  <footer>«Гуляем вместе» · приложение для владельцев собак · Самара, 2026. Часть мест и объявлений в приложении пока показана для примера.<br>Вопросы — <a href="https://t.me/Korobach_E">@Korobach_E</a> · <a href="privacy.html">Политика конфиденциальности</a></footer>
 </div>
 
 <script>
