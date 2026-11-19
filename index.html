@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="«Гуляем вместе» уже работает в Самаре: кто гуляет рядом прямо сейчас, чаты с хозяевами собак, площадки, ветклиники и опасные места на карте. Скачайте для Android или откройте на iPhone.">
+<meta name="description" content="«Гуляем вместе» уже работает в Самаре: кто гуляет рядом прямо сейчас, чаты с хозяевами собак, площадки, ветклиники и опасные места на карте. Откройте на Android или iPhone, скачивать ничего не нужно.">
 <meta property="og:title" content="Гуляем вместе — собачники Самары">
-<meta property="og:description" content="Уже работает! Кто гуляет рядом, чаты с хозяевами и опасные места на карте. Скачайте для Android или откройте на iPhone.">
+<meta property="og:description" content="Уже работает! Кто гуляет рядом, чаты с хозяевами и опасные места на карте. Откройте на Android или iPhone, скачивать ничего не нужно.">
 <meta property="og:image" content="poster.jpg">
 <link rel="icon" href="favicon.png">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -64,6 +64,7 @@ p { margin: 0; }
 .get-app { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
 .btn-store { min-height: 44px; padding: 0 18px; font-size: 15px; background: transparent; color: var(--green); box-shadow: inset 0 0 0 2px var(--green); }
 .get-app-note { margin-top: 8px; font-size: 13px; color: var(--muted); max-width: 46ch; }
+.get-app-note a { color: var(--green); }
 .btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
 .stats { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 28px; }
 .stat b { display: block; font: 800 26px var(--display); font-variant-numeric: tabular-nums; }
@@ -129,12 +130,13 @@ footer a { color: var(--green); }
         <a class="btn btn-primary" href="#download">Установить приложение</a>
         <a class="btn btn-soft" href="#business">Я ветклиника или грумер</a>
       </div>
-      <div class="get-app" id="download" aria-label="Скачать приложение">
-        <a class="btn btn-store" href="https://github.com/evgeniykorobach-eng/gulyaem/releases/latest/download/gulyaem-vmeste.apk">Скачать для Android</a>
-        <a class="btn btn-store" href="https://app.170-168-76-95.sslip.io/">Открыть на iPhone</a>
+      <div class="get-app" id="download" aria-label="Открыть приложение">
+        <a class="btn btn-store" href="https://app.170-168-76-95.sslip.io/">Открыть на Android и iPhone</a>
       </div>
-      <p class="get-app-note"><b>Android:</b> скачайте файл и разрешите установку из неизвестных источников.<br>
-      <b>iPhone:</b> откройте ссылку в Safari, нажмите «Поделиться» → «На экран „Домой“». Иконка «Гуляем» появится рядом с другими приложениями. App Store не нужен.</p>
+      <p class="get-app-note">Скачивать ничего не нужно: приложение откроется в браузере и само подскажет, как поставить иконку на экран.<br>
+      <b>Android:</b> откройте ссылку в Chrome, нажмите ⋮ → «Добавить на главный экран».<br>
+      <b>iPhone:</b> откройте ссылку в Safari, нажмите «Поделиться» → «На экран „Домой“». App Store не нужен.<br>
+      Нужны напоминания о прививках? <a href="https://github.com/evgeniykorobach-eng/gulyaem/releases/latest/download/gulyaem-vmeste.apk">Скачайте файл для Android</a> и разрешите установку из неизвестных источников.</p>
       <div class="stats" aria-label="Что уже есть в приложении">
         <div class="stat"><b>2 км</b><span>радиус оповещения о потерянной собаке</span></div>
         <div class="stat"><b>100</b><span>соседей, и ваш район открыт</span></div>
